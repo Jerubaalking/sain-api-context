@@ -1,4 +1,4 @@
-const APIContext = require('../ApiContext');
+const APIContext = require('../dist/ApiContext');
 require('dotenv').config();
 describe('APIContext', () => {
     let apiContext = new APIContext({

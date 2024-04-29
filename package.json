@@ -1,6 +1,6 @@
 {
   "name": "sain-api-context",
-  "version": "1.0.0",
+  "version": "1.0.31",
   "description": "Encrypting apikey and encrypting session key for mpesa openapi",
   "main": "main.js",
   "scripts": {
@@ -9,12 +9,10 @@
   "keywords": [
     "cipher",
     "encrypt",
-    "publicKey",
+    "RSAKey",
     "apikey",
-    "openApi\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[",
-    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[",
-    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[",
-    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b["
+    "openApi",
+    "mpesa"
   ],
   "dependencies": {
     "axios": "^1.6.8",
@@ -25,5 +23,13 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jerubaalking/sain-api-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jerubaalking/sain-api-context/issues"
+  },
+  "homepage": "https://github.com/Jerubaalking/sain-api-context#readme"
 }
