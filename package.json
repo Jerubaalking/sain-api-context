@@ -1,6 +1,6 @@
 {
   "name": "sain-api-context",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Encrypting apikey and encrypting session key for mpesa openapi",
   "main": "main.js",
   "scripts": {
