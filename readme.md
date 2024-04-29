@@ -14,7 +14,7 @@ npm install sain-api-context
 To use the SainApiContext class, you need to instantiate it with the required parameters:
 
 ```bash
-const {ApiContext} = require('sain-api-context');
+const ApiContext = require('sain-api-context');
 
 // Instantiate ApiContext with required parameters
 const apiContext = new ApiContext(
