@@ -1,4 +1,4 @@
-const {APIContext} = require('../dist/ApiContext');
+const APIContext = require('sain-api-context');
 require('dotenv').config();
 describe('APIContext', () => {
     let apiContext = new APIContext({
