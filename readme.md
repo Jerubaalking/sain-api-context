@@ -40,6 +40,7 @@ try {
 ```
 `request(url, method, data)`
 This method makes a request to the API using the specified URL, HTTP method, and data payload.
+## GET
 ```bash
 try {
   const response = await apiContext.request('/api/resource', 'GET');
@@ -48,10 +49,23 @@ try {
   console.error('Error making request:', error);
 }
 ```
+## POST
+```bash
+try {
+  const response = await apiContext.request('/api/resource', 'POST', payload);
+  console.log('Response:', response.data);
+} catch (error) {
+  console.error('Error making request:', error);
+}
+```
+## PUT
+```bash
+try {
+  const response = await apiContext.request('/api/resource', 'PUT', payload);
+  console.log('Response:', response.data);
+} catch (error) {
+  console.error('Error making request:', error);
+}
+```
 ## License
 This package is open source and available under the MIT License
-
-```bash
-
-Feel free to adjust and expand the content of the `README.md` file according to your package's features and usage instructions. This README will help users understand how to use your `ApiContext` class effectively.
-```
