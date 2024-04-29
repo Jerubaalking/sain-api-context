@@ -17,10 +17,14 @@ To use the SainApiContext class, you need to instantiate it with the required pa
 const ApiContext = require('sain-api-context');
 
 // Instantiate ApiContext with required parameters
-const apiContext = new ApiContext({
-    endpoint: process.env.MPESA_ENDPOINT,
-    apiKey: process.env.SANDBOX_MPESA_API_KEY,
-    publicKey:process.env.PUBLIC_KEY},{encryptionAlgorithm:"RSAES-PKCS1-V1_5"});
+const apiContext = new ApiContext(
+    {   
+      endpoint: process.env.API_ENDPOINT,
+      apiKey: process.env.SANDBOX_API_KEY,
+      publicKey:process.env.PUBLIC_KEY
+    },
+    {encryptionAlgorithm:"RSAES-PKCS1-V1_5"} //its also a default
+);
 ```
 ## Methods
 `setSessionID(sessionUrl)`
