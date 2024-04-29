@@ -146,4 +146,4 @@ class APIContext {
 
 }
 
-module.exports = APIContext;
+module.exports = {APIContext};
