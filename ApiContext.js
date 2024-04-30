@@ -8,9 +8,9 @@ class APIContext {
   static encryptionAlgorithm = "RSAES-PKCS1-V1_5";
   constructor(
     params = {
-      endpoint: process.env.MPESA_ENDPOINT,
-      apiKey: process.env.SANDBOX_MPESA_API_KEY,
-      publicKey: process.env.PUBLIC_KEY,
+      endpoint:"",
+      apiKey:"",
+      publicKey: "",
     },
     options = { encryptionAlgorithm: "RSAES-PKCS1-V1_5" }
   ) {
@@ -148,6 +148,16 @@ class APIContext {
       throw error;
     }
   }
+  async destroySession() {
+    try {
+      this.session_id = null;
+      this.sessionAxios = null;
+      return true; 
+    } catch (error) {
+      throw error;
+    }
+  }
+
 }
 
 module.exports = APIContext;

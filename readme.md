@@ -1,6 +1,6 @@
-# SainApiContext Package
+# Sain api context Package
 
-The `SainApiContext` package provides a convenient way to interact with APIs using context-based authentication and session management.
+The `sain-api-context` package provides a convenient way to interact with APIs using context-based authentication and session management.
 
 ## Installation
 
@@ -65,6 +65,14 @@ try {
   console.log('Response:', response.data);
 } catch (error) {
   console.error('Error making request:', error);
+}
+```
+## Destroy Session
+```bash
+try {
+  await apiContext.destroySession();
+} catch (error) {
+  console.error('Error destroying session:', error);
 }
 ```
 ## License
