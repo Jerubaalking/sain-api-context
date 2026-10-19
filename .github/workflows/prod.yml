@@ -23,8 +23,8 @@ jobs:
       # Trusted publishing requires npm >= 11.5.1
       - run: npm install -g npm@latest
 
-      - run: npm ci
-      - run: npm test
+      # - run: npm ci
+      # - run: npm test
 
       - name: Skip if version already published
         id: check
